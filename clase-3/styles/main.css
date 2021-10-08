@@ -1,0 +1,27 @@
+body {
+    background: rgba(219, 200, 25, 0.877);
+}
+
+div{
+    padding: 20px;
+    margin: 20px;
+    background: rgb(173, 55, 55);
+}
+
+h2{
+    color: seashell;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+/* Reglas con clases */
+.letra-amarilla {
+    color: rgb(177, 206, 17);
+}
+
+.format-green {
+    background: rgb(29, 177, 85);
+    border-radius: 16px;
+    text-align: center;
+}
+

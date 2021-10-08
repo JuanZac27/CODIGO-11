@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS</title>
+    <!-- <style>
+        div{
+            padding: 20px;
+            margin: 20px;
+            background: rgb(173, 55, 55);
+        }
+        h2{
+            color: seashell;
+            font-family: sans-serif;
+        } 
+    </style> -->
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <form method="GET">
+        <div>
+            <h2 class="letra-amarilla">Nombre</h2>
+            <input disabled value="Juan" name="name" type="text" placeholder="Ingresa tu nombre" minlength="6" required />
+        </div>
+        <hr>
+        <div class="format-green">
+            <h2>Correo</h2>
+            <input value="andres@gmail.com" name="email" type="email" placeholder="Ingresa tu correo" required />
+        </div>
+        <hr>
+        <div>
+            <h2>Edad</h2>
+            <input name="age" type="number" placeholder="Ingresa tu edad" min="18" max="60" required />
+        </div>
+        <hr>
+        <div>
+            <h2>Fecha de Nacimiento</h2>
+            <input name="age_born" type="date" placeholder="Ingresa tu fecha de nacimiento" required />
+        </div>
+        <hr>
+        <div>
+            <h2>Tu color favorito</h2>
+            <input name="color" type="color" placeholder="Ingresa tu color favorito" required />
+        </div>
+        <hr>
+        <div>
+            <h2>Password</h2>
+            <input name="pswd" type="password" placeholder="Ingresa tu password" required />
+        </div>
+        <div>
+            <h2>Ingresa un valor del 0 al 100</h2>
+            <input name="valor" type="range" />
+        </div>
+        <hr>
+        <div>
+            <h2>HOBBIES</h2>
+            <input name="hobbies" type="checkbox" id="futbol" value="futbol" />
+            <label for="futbol">Futbol</label>
+            <input name="hobbies" type="checkbox" id="voley" value="voley" />
+            <label for="voley">Voley</label>
+        </div>
+        <div>
+            <h2>SEXO</h2>
+            <input name="sex" type="radio" id="sexom" value="m" />
+            <label for="sexm">Masculino</label>
+            <input name="sex" type="radio" id="sexof" value="f" />
+            <label for="sexf">Femenino</label>
+        </div>
+        <hr>
+        <div>
+            <h2>Pais</h2>
+            <select name="country" required>
+                <option value="">Seleccione pais</option>
+                <option value="peru">Peru</option>
+                <option value="china">China</option>
+                <option value="canada">Canada</option>
+                <option value="italia">Italia</option>
+            </select>
+        </div>
+        <hr>
+        <div>
+            <button>ENVIAR</button>
+        </div>
+    </form>
+</body>
+</html>
