@@ -1,27 +1,32 @@
-body {
-    background: rgba(219, 200, 25, 0.877);
-}
-
-div{
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*REGLAS GENERALES*/
+  body {
+    background: blue;
+  }
+  
+  div {
     padding: 20px;
     margin: 20px;
-    background: rgb(173, 55, 55);
-}
-
-h2{
-    color: seashell;
+    background: red;
+  }
+  
+  h2 {
+    color: white;
+    font-family: arial;
     margin-bottom: 20px;
-    font-family: sans-serif;
-}
-
-/* Reglas con clases */
-.letra-amarilla {
-    color: rgb(177, 206, 17);
-}
-
-.format-green {
-    background: rgb(29, 177, 85);
-    border-radius: 16px;
-    text-align: center;
-}
-
+  }
+  
+  /*reglas con clases*/
+  .letra-roja {
+    color: red;
+  }
+  
+  .format-orange {
+    background: orange;
+    border-radius: 20px;
+    text-align:center;
+  }
