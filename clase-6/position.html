@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITION</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 400px;
+            height: 400px;
+            background: #70fa9ee1;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        .box .box-one,
+        .box .box-two {
+            position: absolute;
+            transition: all .8s ease;
+        }
+
+        .box .box-one {
+            left: 0px;
+            top: 20px;
+            width: 30%;
+            background: #3eb447;            
+        }
+
+        .box .box-two {
+            right: 0px;
+            bottom: 20px;
+            width: 50%;
+            background: #41d1f5;            
+        }
+
+        .box:hover .box-one {
+            top: inherit;
+            bottom: 20px;
+            background: #00ffffa8;
+        }
+
+        .box:hover .box-two {
+            bottom: inherit;
+            top: 20px;
+            background: #a200ffa8;
+        }
+
+        header {
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            background: #c8c86a;
+            width: 100%;
+            font-family: Tahoma;
+        }
+
+        html {
+            height: 200%;
+        }
+
+        body {
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MENU PRINCIPAL</h1>
+    </header>
+    <div class="box">
+        <div class="box-one">CAJA UNO</div>
+        <div class="box-two">CAJA DOS</div>
+        
+    </div>
+    <br>
+    <div class="box">
+        <div class="box-one">CAJA UNO</div>
+        <div class="box-two">CAJA DOS</div>
+        
+    </div>
+</body>
+</html>

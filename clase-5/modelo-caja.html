@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODELO DE CAJA</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            width: 800px;
+            /* 
+            background-color: red;
+            background-image: url('./images/startransparent.gif'); 
+            */
+            background-repeat: repeat;
+            background-position: 10px 10px;
+            /* background-image: url('./images/perro.jpg'); */
+            background: url('./images/startransparent.gif') red 0 0 no-repeat;
+            /* background: red; */
+            /* 
+            padding-top: 15px;
+            padding-right: 35px;
+            padding-bottom: 50px;
+            padding-left: 40px;
+            ó
+            padding: 15px 35px 50px 40px;
+            */
+            padding: 20px;
+            /* 
+            border-style: double;
+            border-width: 10px;
+            border-color: orange; 
+            ó
+            border: 10px double orange;
+            */
+            border: 10px solid orange;
+            /*
+            margin-top: 30px;
+            margin-right: 35px;
+            margin-bottom: 40px;
+            margin-left: 45px; 
+            ó
+            margin: 30px 35px 40px 45px;
+            ó
+            margin-left: auto;
+            margin-right: auto;
+            */
+            margin: 20px auto;
+            height: 400px;
+            /* 
+            overflow-y: scroll;
+            overflow-x: scroll; 
+            */
+            overflow: auto;
+        }
+
+        h1 {
+            text-align: left; /* LEFT, RIGHT, CENTER, JUSTIFY */
+            /* width: 1200px; */
+            /* visibility: hidden; visible - hidden */
+        }
+
+        a {
+            display: none; /* block, inline, none */
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>TITULO</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure vel delectus, iusto perferendis in ex?</p>
+        <div>
+            <h2>TITULO H2</h2>
+            <p>Lorem, ipsum dolor.</p>
+            <a href="">link</a>
+            <a href="">link</a>
+        </div>
+        <div>
+            <h2>TITULO H2</h2>
+            <p>Lorem, ipsum dolor.</p>
+            <a href="">link</a>
+        </div>
+        <div>
+            <h2>TITULO H2</h2>
+            <p>Lorem, ipsum dolor.</p>
+            <a href="">link</a>
+        </div>
+        <div>
+            <h2>TITULO H2</h2>
+            <p>Lorem, ipsum dolor.</p>
+            <a href="">link</a>
+        </div>
+    </div>
+    <div class="wrapper">
+        <h1>TITULO</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure vel delectus, iusto perferendis in ex?</p>
+        <div>
+            <h2>TITULO H2</h2>
+            <p>Lorem, ipsum dolor.</p>
+            <a href="">link</a>
+            <a href="">link</a>
+        </div>
+        <div>
+            <h2>TITULO H2</h2>
+            <p>Lorem, ipsum dolor.</p>
+            <a href="">link</a>
+        </div>
+        <div>
+            <h2>TITULO H2</h2>
+            <p>Lorem, ipsum dolor.</p>
+            <a href="">link</a>
+        </div>
+        <div>
+            <h2>TITULO H2</h2>
+            <p>Lorem, ipsum dolor.</p>
+            <a href="">link</a>
+        </div>
+    </div>
+    
+    <style>
+        p {
+            margin-bottom: 10px;
+        }
+
+        p span {
+            background: yellow;
+            margin-bottom: 20px;
+            /* display: block; */
+        }
+
+        p span {
+            display: inline-block ;
+        }
+    </style>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <span>Exercitationem velit ullam soluta expedita
+            commodi accusamus. Molestiae ut, delectus culpa deleniti natus fugit exercitationem ipsam maiores repudiandae
+            ipsa.</span> Tempore, incidunt minus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <span>Exercitationem velit ullam soluta expedita
+            commodi accusamus. Molestiae ut, delectus culpa deleniti natus fugit exercitationem ipsam maiores repudiandae
+            ipsa.</span> Tempore, incidunt minus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <span>Exercitationem velit ullam soluta expedita
+            commodi accusamus. Molestiae ut, delectus culpa deleniti natus fugit exercitationem ipsam maiores repudiandae
+            ipsa.</span> Tempore, incidunt minus.</p>
+      </div>
+    
+</body>
+</html>

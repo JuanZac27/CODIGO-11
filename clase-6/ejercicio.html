@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROBOT</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        div {
+            margin: auto;
+        }
+
+        .wrapper,
+        .box-face .box-eye-left,
+        .box-face .box-eye-right,
+        .box-face .box-mouth,
+        .box-body .box-arm-left,
+        .box-arm-left .left-finger-one,
+        .box-arm-left .left-finger-two,
+        .box-arm-left .left-finger-three,
+        .box-body .box-arm-right,
+        .box-arm-right .right-finger-one,
+        .box-arm-right .right-finger-two,
+        .box-arm-right .right-finger-three,
+        .box-body .box-leg-left, 
+        .box-leg-left .left-foot,
+        .box-body .box-leg-right,
+        .box-leg-right .right-foot {
+            position: absolute;
+            transition: all .8s ease;
+        }
+
+        .wrapper {
+            width: 800px;
+            height: 800px;
+            background: #f0f0f0;
+            border: 2px solid #c21616;
+            margin: 10px auto;
+            overflow: auto;
+        }
+
+        .box-face {
+            width: 190px;
+            height: 150px;
+            background: #252A8C;
+            position: relative;
+            border-radius: 10px;
+            /* margin: auto; */
+        }
+
+        .box-eye-left {
+            left: 30px;
+            top: 30px;
+            width: 20%;
+            height: 20%;
+            background: #2489e7;
+        }
+
+        .box-eye-right {
+            right: 30px;
+            top: 30px;
+            width: 20%;
+            height: 20%;
+            background: #2489e7;
+        }
+
+        .box-mouth {
+            /* bottom: 30px; */
+            margin-left: 45px;
+            margin-top: 100px;
+            width: 50%;
+            height: 20%;
+            background: #b7b0bd;
+        }
+
+        .box-body {
+            width: 300px;
+            height: 350px;
+            background: #a51414;
+            position: relative;
+            border-radius: 10px;
+            
+        }
+
+        .box-arm-left {
+            left: -40px;
+            top: 70px;
+            width: 50%;
+            height: 20%;
+            background: #BA0D03;
+        }
+
+        .left-finger-one {
+            right: -15px;
+            top: 10px;
+            width: 20%;
+            height: 20%;
+            background: #252A8C;
+        }
+
+        .left-finger-two {
+            right: -15px;
+            top: 30px;
+            width: 20%;
+            height: 20%;
+            background: #252A8C;
+        }
+
+        .left-finger-three {
+            right: -15px;
+            top: 50px;
+            width: 20%;
+            height: 20%;
+            background: #252A8C;
+        }
+
+        .box-arm-right {
+            right: -40px;
+            top: 70px;
+            width: 50%;
+            height: 20%;
+            background: #BA0D03;
+        }
+
+        .right-finger-one {
+            left: -15px;
+            top: 10px;
+            width: 20%;
+            height: 20%;
+            background: #252A8C;
+        }
+
+        .right-finger-two {
+            left: -15px;
+            top: 30px;
+            width: 20%;
+            height: 20%;
+            background: #252A8C;
+        }
+
+        .right-finger-three {
+            left: -15px;
+            top: 50px;
+            width: 20%;
+            height: 20%;
+            background: #252A8C;
+        }
+
+        .box-leg-left {
+            left: 40px;
+            top: 300px;
+            width: 25%;
+            height: 50%;
+            background: #dfdfdf;
+        }
+
+        .left-foot {
+            left: -25px;
+            top: 150px;
+            width: 150%;
+            height: 30%;
+            background: #202aaf;
+        }
+
+        .box-leg-right {
+            right: 40px;
+            top: 300px;
+            width: 25%;
+            height: 50%;
+            background: #dfdfdf;
+        }
+
+        .right-foot {
+            right: -25px;
+            top: 150px;
+            width: 150%;
+            height: 30%;
+            background: #202aaf;
+        }
+    </style>
+<body>
+
+    <div class="wrapper"> CREADO POR JUAN ZACARIAS
+
+        <div class="box-face">
+            <div class="box-eye-left"><!-- OJO IZQ --></div>
+            <div class="box-eye-right"><!-- OJO DER --></div>
+            <div class="box-mouth"><!-- BOCA --></div>
+        </div>
+        <div class="box-body"><!-- CUERPO -->
+            <div class="box-arm-left"><!-- BRAZO IZQ -->
+                <div class="left-finger-one"><!-- IZQ DEDO 1 --></div>
+                <div class="left-finger-two"><!-- IZQ DEDO 2 --></div>
+                <div class="left-finger-three"><!-- IZQ DEDO 3 --></div>
+            </div>
+            <div class="box-arm-right"><!-- BRAZO DER -->
+                <div class="right-finger-one"><!-- DER DEDO 1 --></div>
+                <div class="right-finger-two"><!-- DER DEDO 2 --></div>
+                <div class="right-finger-three"><!-- DER DEDO 3 --></div>
+            </div>
+            <div class="box-leg-left"><!-- PIERNA IZQ -->
+                <div class="left-foot"><!-- PIE IZQ --></div>
+            </div>
+            <div class="box-leg-right"><!-- PIERNA DER -->
+                <div class="right-foot"><!-- PIE DER --></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
