@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX ALIGN CONTENT</title>
+    <style>
+        .box {
+            display: flex;
+            width: 400px;
+            background: #faebd7;
+            flex-wrap: wrap;
+        }
+
+        .box div {
+            width: 50%;
+        }
+
+        .box div:nth-child(even) {
+            background: blueviolet;
+        }
+
+        .box div:nth-child(odd) {
+            background: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div class="box align-content-flex-start">
+        <div>ONE</div>
+        <div>TWO</div>
+        <div>THREE</div>
+        <div>FOUR</div>
+        <div>FIVE</div>
+    </div>
+    <br>
+    <div class="box align-content-flex-end">
+        <div>ONE</div>
+        <div>TWO</div>
+        <div>THREE</div>
+        <div>FOUR</div>
+        <div>FIVE</div>
+    </div>
+    <br>
+    <div class="box align-content-center">
+        <div>ONE</div>
+        <div>TWO</div>
+        <div>THREE</div>
+        <div>FOUR</div>
+        <div>FIVE</div>
+    </div>
+    <br>
+    <div class="box align-content-space-between">
+        <div>ONE</div>
+        <div>TWO</div>
+        <div>THREE</div>
+        <div>FOUR</div>
+        <div>FIVE</div>
+    </div>
+    <br>
+    <div class="box align-content-space-around">
+        <div>ONE</div>
+        <div>TWO</div>
+        <div>THREE</div>
+        <div>FOUR</div>
+        <div>FIVE</div>
+    </div>
+    <br>
+    <div class="box align-content-stretch">
+        <div>ONE</div>
+        <div>TWO</div>
+        <div>THREE</div>
+        <div>FOUR</div>
+        <div>FIVE</div>
+    </div>
+    <br>
+</body>
+</html>
