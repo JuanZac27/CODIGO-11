@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AREAS</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrapper {
+            display: grid;
+            height: 100vh;
+            margin: auto;
+            grid-template-columns: 150px 200px 200px 200px;
+            grid-template-rows: 150px auto 150px;
+            grid-template-areas: "aside header header header"
+            "aside main main main"
+            "aside footer footer footer";
+        }
+
+        .wrapper header {
+            grid-area: header;
+            background: #c34040;
+        }
+
+        .wrapper aside {
+            grid-area: aside;
+            background: #59b3b6;
+        }
+
+        .wrapper main {
+            grid-area: main;
+            background: #a9a9a9;
+        }
+
+        .wrapper footer {
+            grid-area: footer;
+            background: #143f3f;
+        }
+    </style>
+</head>
+<body>
+    <div class=wrapper>
+        <header>
+            HEADER
+        </header>
+        <aside>
+            ASIDE
+        </aside>
+        <main>
+            MAIN
+        </main>
+        <footer>
+            FOOTER
+        </footer>
+    </div>
+
+</body>
+</html>

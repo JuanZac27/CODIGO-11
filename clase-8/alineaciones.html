@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALINEACIONES</title>
+    <style>
+        body {
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            font-family: Arial;
+        }
+
+        body h2 {
+            color: black;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            background: #cfcfcf;
+        }
+
+        .justify-items {
+            justify-items: start; 
+        }
+
+        .align-items {
+            align-items: center;
+            height: 400px;
+        }
+
+        .justify-content {
+            grid-template-columns: repeat(4, 100px);
+            justify-content: center; /* start / center / space-evenly / end */
+        }
+
+        .align-content {
+            align-content: center;
+            height: 200px;
+        }
+
+        .justify-content div {
+            width: 100px;
+        }
+        .justify-self div:first-child{
+            justify-self: center;
+        }
+
+        .align-self {
+            height: 200px;
+        }
+
+        .align-self div:last-child {
+            align-self: center;
+        }
+    
+        .grid div:nth-child(odd) {
+            background: #c22424;
+        }
+
+        .grid div:nth-child(even) {
+            background: #2f9b2f;
+        }
+    </style>
+</head>
+<body>
+    <h2>Justify items</h2>
+    <div class="grid justify-items">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+    <br>
+    <h2>Align items</h2>
+    <div class="grid align-items">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+    <br>
+    <h2>Justify content</h2>
+    <div class="grid justify-content">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+    <br>
+    <h2>Align content</h2>
+    <div class="grid align-content">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h2>Justify self</h2>
+    <div class="grid justify-self">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+    <br>
+    <h2>Align self</h2>
+    <div class="grid align-self">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+</html>

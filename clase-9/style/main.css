@@ -1,0 +1,57 @@
+div {
+    background: red;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 42px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex div {
+    width: 50%;
+    background: wheat;
+    border: 2px solid green;
+}
+
+div header {
+    background: skyblue;
+}
+
+div footer {
+    background: skyblue;
+}
+
+/* 
+max-width: ancho maximo
+min-width: ancho minimo
+max-height: altura maxima
+min-height: altuta minima
+ */
+
+/* MOBILE LARGER 420px - 720px */
+@media (max-width:720px) {
+    div {
+        background: blue;
+        max-width: 620px;
+        font-size: 28px;
+    }
+}
+
+/* MOBILE SMALL */
+@media (max-width:420px) {
+    div {
+        background: pink;
+    }
+}
+
+/* MOBILE SMALL */
+@media (max-width:320px) {
+    div {
+        background: orange;
+    }
+}
