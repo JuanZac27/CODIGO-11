@@ -1,57 +1,88 @@
 div {
     background: red;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: auto;
     padding: 20px;
     box-sizing: border-box;
     font-size: 42px;
-}
-
-.flex {
+  }
+  
+  .flex {
     display: flex;
     flex-wrap: wrap;
-}
-
-.flex div {
+  }
+  
+  .flex div {
     width: 50%;
-    background: wheat;
-    border: 2px solid green;
-}
-
-div header {
-    background: skyblue;
-}
-
-div footer {
-    background: skyblue;
-}
-
-/* 
-max-width: ancho maximo
-min-width: ancho minimo
-max-height: altura maxima
-min-height: altuta minima
- */
-
-/* MOBILE LARGER 420px - 720px */
-@media (max-width:720px) {
+    background: white;
+    border: 2px solid red;
+  }
+  
+  div header {
+    background: brown;
+  }
+  
+  div footer {
+    background: brown;
+  }
+  
+  /*
+    max-width: ancho maximo
+    min-width: ancho minimo
+    min-height: altura minima
+    max-height: altura maxima
+  */
+  
+  /*DESKTOP O TABLET 720px - 1080px*/
+  @media (min-width:720px) and (max-width: 1080px) {
     div {
-        background: blue;
-        max-width: 620px;
-        font-size: 28px;
+      background: blueviolet;
+      max-width: 980px;
+      font-size: 34px;
     }
-}
-
-/* MOBILE SMALL */
-@media (max-width:420px) {
+  
+    .flex div {
+      width: 100%;
+    }
+  
+    div header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+  
+  /*MOBILE LARGE 420px - 720px*/
+  @media (min-width:420px) and (max-width: 719px) {
     div {
-        background: pink;
+      background: blue;
+      max-width: 620px;
+      font-size: 28px;
     }
-}
-
-/* MOBILE SMALL */
-@media (max-width:320px) {
+  
+    div header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+  
+  /*MOBILE SMALL 320px - 420px*/
+  @media (min-width:320px) and (max-width: 419px) {
     div {
-        background: orange;
+      background: pink;
+      max-width: 320px;
+      font-size: 22px;
     }
-}
+  }
+  
+  /*MOBILE XSMALL 0 - 320px*/
+  @media (min-width:0) and (max-width: 319px) {
+    div {
+      background: orange;
+      max-width: 280px;
+      font-size: 34px;
+    }
+  }
