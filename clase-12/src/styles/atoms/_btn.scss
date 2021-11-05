@@ -1,0 +1,23 @@
+.btn {
+    min-width: 120px;
+    padding: 10px 15px;
+    border: 1px solid #808080;
+    background-color: #c0d5db;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color:#ff9393;
+    border-color: #d66d6d;
+}
+
+.btn-secondary {
+    background-color:#93f2ff;
+    border-color: #37aecc;
+}
+
+.btn-sm {
+    font-size: 12px;
+    min-width: 80px;
+    padding: 8px 10px;
+}
